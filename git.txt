@@ -1,0 +1,30 @@
+# 设置你的用户名
+> git config --global user.name "chengwei"
+# 设置你的邮箱地址
+> git config --global user.email "Email"
+
+查看git配置信息 包含用户名 邮箱地址
+ git config --list
+
+q #结束列表显示
+clear #清除屏幕
+
+
+仓库提交
+git init  #把文件夹变成git管理仓库
+
+git status #查看当前仓库状态
+git add 文件名 #把文件添加到暂存区
+git add . 把所有文件添加到暂存区
+git commit -m 提交说明 #暂存区提交到本地仓库
+
+版本控制
+git log #查看当前版本之前的所有版本
+
+git checkout 文件名 #版本回退 把暂存区文件覆盖未提交的文件
+
+git reflog #查看所有的版本 及恢复记录
+git reset --hard 提交id   #从git仓库恢复到指定的版本
+
+小秘密
+.gitignore  文件名
